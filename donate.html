@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Донат - SooFill.com</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="SooFill Logo">
+                </a>
+                <span class="domain">SooFill.com</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="forum.html"><i class="fas fa-comments"></i> Форум</a></li>
+                    <li><a href="shop.html"><i class="fas fa-shopping-cart"></i> Магазин</a></li>
+                    <li><a href="donate.html" class="active"><i class="fas fa-gem"></i> Донат</a></li>
+                    <li><a href="rules.html"><i class="fas fa-book"></i> Правила</a></li>
+                </ul>
+            </nav>
+            <div class="user-panel">
+                <a href="#" class="login-btn"><i class="fas fa-sign-in-alt"></i> Войти</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="page-title">
+                <h1><i class="fas fa-gem"></i> Поддержать сервер</h1>
+                <p>Приобретайте Сухарики для поддержки развития проекта и получения преимуществ</p>
+            </div>
+        </section>
+
+        <section class="donate-section">
+            <div class="donate-container">
+                <div class="currency-section">
+                    <div class="currency-container">
+                        <div class="currency-image">
+                            <img src="images/gold-coins.png" alt="Игровая валюта">
+                        </div>
+                        <div class="currency-info">
+                            <h2>Покупка игровой валюты</h2>
+                            <div class="currency-slider-container">
+                                <div class="slider-label">Количество Сухариков</div>
+                                <div class="currency-amount">6000</div>
+                                <div class="currency-slider">
+                                    <input type="range" min="100" max="10000" value="6000" class="slider" id="currencyRange">
+                                    <div class="slider-progress"></div>
+                                </div>
+                            </div>
+                            <div class="currency-exchange">
+                                <div class="exchange-box">
+                                    <div class="exchange-label">Отдаете</div>
+                                    <div class="exchange-amount">500₽</div>
+                                </div>
+                                <div class="exchange-box">
+                                    <div class="exchange-label">Получаете</div>
+                                    <div class="exchange-amount">6000R</div>
+                                </div>
+                            </div>
+                            <div class="terms">
+                                <span>Совершая оплату, вы соглашаетесь со всеми условиями <a href="#">пользовательского соглашения</a></span>
+                            </div>
+                            <button class="buy-btn" id="buyBtn">ПРИОБРЕСТИ СУХАРИКИ <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="donate-benefits">
+                    <h2>Преимущества доната</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-store"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h3>Доступ к магазину</h3>
+                                <p>Покупайте предметы, блоки и другие ресурсы в нашем магазине.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h3>VIP-статус</h3>
+                                <p>Приобретите особый статус с дополнительными возможностями.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-magic"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h3>Косметические эффекты</h3>
+                                <p>Уникальные частицы, питомцы и другие эффекты для выделения среди игроков.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h3>Поддержка проекта</h3>
+                                <p>Ваша поддержка помогает нам развивать сервер и делать его лучше!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="donate-plans">
+                    <h2>Готовые наборы</h2>
+                    <div class="plans-grid">
+                        <div class="plan-card">
+                            <div class="plan-header">
+                                <h3>Стартовый</h3>
+                                <div class="plan-price">
+                                    <span>300₽</span>
+                                </div>
+                            </div>
+                            <div class="plan-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> 4000 Сухариков</li>
+                                    <li><i class="fas fa-check"></i> VIP-статус на 7 дней</li>
+                                    <li><i class="fas fa-check"></i> Набор предметов для новичка</li>
+                                </ul>
+                            </div>
+                            <div class="plan-footer">
+                                <button class="plan-btn">Приобрести</button>
+                            </div>
+                        </div>
+
+                        <div class="plan-card popular">
+                            <div class="plan-badge">Популярное</div>
+                            <div class="plan-header">
+                                <h3>Продвинутый</h3>
+                                <div class="plan-price">
+                                    <span>700₽</span>
+                                </div>
+                            </div>
+                            <div class="plan-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> 10000 рилликов</li>
+                                    <li><i class="fas fa-check"></i> VIP-статус на 30 дней</li>
+                                    <li><i class="fas fa-check"></i> Набор алмазных инструментов</li>
+                                    <li><i class="fas fa-check"></i> Уникальный питомец</li>
+                                </ul>
+                            </div>
+                            <div class="plan-footer">
+                                <button class="plan-btn">Приобрести</button>
+                            </div>
+                        </div>
+
+                        <div class="plan-card">
+                            <div class="plan-header">
+                                <h3>Премиум</h3>
+                                <div class="plan-price">
+                                    <span>1500₽</span>
+                                </div>
+                            </div>
+                            <div class="plan-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> 25000 рилликов</li>
+                                    <li><i class="fas fa-check"></i> PREMIUM-статус на 60 дней</li>
+                                    <li><i class="fas fa-check"></i> Полный набор зачарованного снаряжения</li>
+                                    <li><i class="fas fa-check"></i> Все косметические эффекты</li>
+                                    <li><i class="fas fa-check"></i> Эксклюзивные команды</li>
+                                </ul>
+                            </div>
+                            <div class="plan-footer">
+                                <button class="plan-btn">Приобрести</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="donate-faq">
+                    <h2>Часто задаваемые вопросы</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Как долго идет зачисление рилликов?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Риллики зачисляются на ваш аккаунт мгновенно после успешной оплаты. В редких случаях процесс может занять до 5 минут.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Какие способы оплаты вы принимаете?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Мы принимаем банковские карты Visa, MasterCard, электронные кошельки QIWI, WebMoney, а также оплату через мобильных операторов.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Могу ли я вернуть деньги после покупки?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>К сожалению, возврат средств после покупки рилликов невозможен, поэтому рекомендуем внимательно выбирать необходимое количество перед оплатой.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Есть ли дополнительные бонусы при покупке большого количества рилликов?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Да, при покупке более 10000 Сухариков вы получаете бонус в размере 10% от суммы. При покупке более 20000 Сухариков - 15%.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="SooFil Logo">
+                <div class="footer-info">
+                    <span>© 2025 SooFill.com - Все права защищены</span>
+                    <div class="footer-links">
+                        <a href="#">Пользовательское соглашение</a>
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="#">Контакты</a>
+                    </div>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#" title="ВКонтакте"><i class="fab fa-vk"></i></a>
+                <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+                <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Payment Modal -->
+    <div class="modal-overlay" id="paymentModal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>Оплата рилликов</h3>
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="payment-details">
+                    <div class="amount-info">
+                        <span>Количество: <b id="currencyAmount">6000 рилликов</b></span>
+                        <span>Сумма к оплате: <b id="paymentAmount">500₽</b></span>
+                    </div>
+                    <form id="paymentForm">
+                        <div class="form-group">
+                            <label for="cardNumber">Номер карты</label>
+                            <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000" maxlength="19">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="expiryDate">Срок действия</label>
+                                <input type="text" id="expiryDate" placeholder="ММ/ГГ" maxlength="5">
+                            </div>
+                            <div class="form-group">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" placeholder="000" maxlength="3">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cardHolder">Имя держателя карты</label>
+                            <input type="text" id="cardHolder" placeholder="IVAN IVANOV">
+                        </div>
+                        <div class="form-group">
+                            <label for="promoCode">Промокод (если есть)</label>
+                            <input type="text" id="promoCode" placeholder="Введите промокод">
+                        </div>
+                        <button type="submit" class="payment-btn">ОПЛАТИТЬ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Скрипт для FAQ
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                
+                question.addEventListener('click', function() {
+                    // Закрываем все ответы
+                    faqItems.forEach(i => {
+                        if (i !== item) {
+                            i.classList.remove('active');
+                            i.querySelector('.faq-answer').style.maxHeight = null;
+                        }
+                    });
+                    
+                    // Открываем/закрываем текущий ответ
+                    item.classList.toggle('active');
+                    if (item.classList.contains('active')) {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                    } else {
+                        answer.style.maxHeight = null;
+                    }
+                });
+            });
+            
+            // Открываем первый вопрос по умолчанию
+            if (faqItems.length > 0) {
+                faqItems[0].classList.add('active');
+                faqItems[0].querySelector('.faq-answer').style.maxHeight = 
+                    faqItems[0].querySelector('.faq-answer').scrollHeight + 'px';
+            }
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форум - SooFill.com</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="ReallyWorld Logo">
+                </a>
+                <span class="domain">SooFill.com</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="forum.html" class="active"><i class="fas fa-comments"></i> Форум</a></li>
+                    <li><a href="shop.html"><i class="fas fa-shopping-cart"></i> Магазин</a></li>
+                    <li><a href="donate.html"><i class="fas fa-gem"></i> Донат</a></li>
+                    <li><a href="rules.html"><i class="fas fa-book"></i> Правила</a></li>
+                </ul>
+            </nav>
+            <div class="user-panel">
+                <a href="#" class="login-btn"><i class="fas fa-sign-in-alt"></i> Войти</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="page-title">
+                <h1><i class="fas fa-comments"></i> Форум SooFill</h1>
+                <p>Общайтесь с другими игроками, задавайте вопросы и делитесь своими идеями</p>
+            </div>
+        </section>
+
+        <section class="forum-categories">
+            <div class="forum-container">
+                <div class="forum-category">
+                    <div class="category-header">
+                        <h2><i class="fas fa-bullhorn"></i> Новости и объявления</h2>
+                    </div>
+                    <div class="category-topics">
+                        <div class="topic">
+                            <div class="topic-icon">
+                                <i class="fas fa-thumbtack"></i>
+                            </div>
+                            <div class="topic-info">
+                                <a href="#" class="topic-title">Обновление сервера до версии 1.16.5</a>
+                                <div class="topic-meta">
+                                    <span class="author">Администратор</span>
+                                    <span class="date">25.03.2023</span>
+                                </div>
+                            </div>
+                            <div class="topic-stats">
+                                <div class="views">
+                                    <i class="fas fa-eye"></i> 245
+                                </div>
+                                <div class="replies">
+                                    <i class="fas fa-comment"></i> 18
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="topic">
+                            <div class="topic-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="topic-info">
+                                <a href="#" class="topic-title">Важное объявление: технические работы 15 апреля</a>
+                                <div class="topic-meta">
+                                    <span class="author">Модератор</span>
+                                    <span class="date">10.04.2023</span>
+                                </div>
+                            </div>
+                            <div class="topic-stats">
+                                <div class="views">
+                                    <i class="fas fa-eye"></i> 187
+                                </div>
+                                <div class="replies">
+                                    <i class="fas fa-comment"></i> 5
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forum-category">
+                    <div class="category-header">
+                        <h2><i class="fas fa-hands-helping"></i> Помощь и поддержка</h2>
+                    </div>
+                    <div class="category-topics">
+                        <div class="topic">
+                            <div class="topic-icon">
+                                <i class="fas fa-question-circle"></i>
+                            </div>
+                            <div class="topic-info">
+                                <a href="#" class="topic-title">Как получить разрешение на постройку в центре города?</a>
+                                <div class="topic-meta">
+                                    <span class="author">SkyBuilder</span>
+                                    <span class="date">05.04.2023</span>
+                                </div>
+                            </div>
+                            <div class="topic-stats">
+                                <div class="views">
+                                    <i class="fas fa-eye"></i> 78
+                                </div>
+                                <div class="replies">
+                                    <i class="fas fa-comment"></i> 3
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="topic">
+                            <div class="topic-icon">
+                                <i class="fas fa-question-circle"></i>
+                            </div>
+                            <div class="topic-info">
+                                <a href="#" class="topic-title">Не работает телепорт между мирами</a>
+                                <div class="topic-meta">
+                                    <span class="author">MineExplorer</span>
+                                    <span class="date">01.04.2023</span>
+                                </div>
+                            </div>
+                            <div class="topic-stats">
+                                <div class="views">
+                                    <i class="fas fa-eye"></i> 56
+                                </div>
+                                <div class="replies">
+                                    <i class="fas fa-comment"></i> 7
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forum-category">
+                    <div class="category-header">
+                        <h2><i class="fas fa-users"></i> Для игроков</h2>
+                    </div>
+                    <div class="category-topics">
+                        <div class="topic">
+                            <div class="topic-icon">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                            <div class="topic-info">
+                                <a href="#" class="topic-title">Набор в гильдию "Алмазные копатели"</a>
+                                <div class="topic-meta">
+                                    <span class="author">DiamondMaster</span>
+                                    <span class="date">28.03.2023</span>
+                                </div>
+                            </div>
+                            <div class="topic-stats">
+                                <div class="views">
+                                    <i class="fas fa-eye"></i> 134
+                                </div>
+                                <div class="replies">
+                                    <i class="fas fa-comment"></i> 22
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="topic">
+                            <div class="topic-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="topic-info">
+                                <a href="#" class="topic-title">Торговля: предлагаю алмазы, нужны эндер-жемчуги</a>
+                                <div class="topic-meta">
+                                    <span class="author">TraderPro</span>
+                                    <span class="date">30.03.2023</span>
+                                </div>
+                            </div>
+                            <div class="topic-stats">
+                                <div class="views">
+                                    <i class="fas fa-eye"></i> 89
+                                </div>
+                                <div class="replies">
+                                    <i class="fas fa-comment"></i> 11
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="forum-actions">
+            <div class="forum-container">
+                <button class="create-topic-btn">
+                    <i class="fas fa-plus"></i> Создать новую тему
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="ReallyWorld Logo">
+                <div class="footer-info">
+                    <span>© 2025 SooFill.com - Все права защищены</span>
+                    <div class="footer-links">
+                        <a href="#">Пользовательское соглашение</a>
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="#">Контакты</a>
+                    </div>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#" title="ВКонтакте"><i class="fab fa-vk"></i></a>
+                <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+                <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

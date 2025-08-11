@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SooFill - Minecraft сервер</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="/">
+                    <img src="images/logo.png" alt="SooFill Logo">
+                </a>
+                <span class="domain">SooFill.com</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="forum.html"><i class="fas fa-comments"></i> Форум</a></li>
+                    <li><a href="shop.html"><i class="fas fa-shopping-cart"></i> Магазин</a></li>
+                    <li><a href="donate.html"><i class="fas fa-gem"></i> Донат</a></li>
+                    <li><a href="rules.html"><i class="fas fa-book"></i> Правила</a></li>
+                </ul>
+            </nav>
+            <div class="user-panel">
+                <a href="#" class="login-btn"><i class="fas fa-sign-in-alt"></i> Войти</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="banner">
+                <div class="server-status">
+                    <div class="status-box">
+                        <h2><i class="fas fa-star"></i> НАШ СЕРВЕР <i class="fas fa-star"></i></h2>
+                        <div class="status-online">
+                            <span>ОНЛАЙН: <b>450</b> / <b>7500</b></span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 6%"></div>
+                        </div>
+                        <div class="server-address">
+                            <span>SooFill.aternos.me</span>
+                            <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="join-section">
+            <div class="join-container">
+                <div class="player-image">
+                    <img src="images/minecraft-player.png" alt="Minecraft Player">
+                </div>
+                <div class="join-text">
+                    <h2>Присоединяйтесь к нам<br>прямо сейчас и начинайте игру!</h2>
+                    <p><i class="fas fa-user-astronaut"></i> Выбери свою роль и отыгрывай ее.</p>
+                    <p><i class="fas fa-rocket"></i> У нас можно стать кем угодно, даже космонавтом!</p>
+                </div>
+                <div class="version-box">
+                    <div class="version-info">
+                        <span>Рекомендуемая версия 1.16.5</span>
+                    </div>
+                    <a href="#" class="connect-btn">
+                        SooFill.aternos.me
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="currency-section">
+            <div class="currency-container">
+                <div class="currency-image">
+                    <img src="images/gold-coins.png" alt="Игровая валюта">
+                </div>
+                <div class="currency-info">
+                    <h2>Покупка игровой валюты</h2>
+                    <div class="currency-slider-container">
+                        <div class="slider-label">Количество Сухариков</div>
+                        <div class="currency-amount">6000</div>
+                        <div class="currency-slider">
+                            <input type="range" min="100" max="10000" value="6000" class="slider" id="currencyRange">
+                            <div class="slider-progress"></div>
+                        </div>
+                    </div>
+                    <div class="currency-exchange">
+                        <div class="exchange-box">
+                            <div class="exchange-label">Отдаете</div>
+                            <div class="exchange-amount">500₽</div>
+                        </div>
+                        <div class="exchange-box">
+                            <div class="exchange-label">Получаете</div>
+                            <div class="exchange-amount">500M</div>
+                        </div>
+                    </div>
+                    <div class="terms">
+                        <span>Совершая оплату, вы соглашаетесь со всеми условиями <a href="#">пользовательского соглашения</a></span>
+                    </div>
+                    <button class="buy-btn" id="buyBtn">ПРИОБРЕСТИ СУХАРИКИ <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="privileges-section">
+            <div class="privileges-container">
+                <div class="privileges-header">
+                    <div class="privileges-icon">
+                        <img src="images/chest-icon.png" alt="Привилегии">
+                    </div>
+                    <h2>Магазин привилегий</h2>
+                </div>
+                <div class="privileges-tabs">
+                    <button class="tab-btn active"><i class="fas fa-gamepad"></i> ГРИФ, ВЫЖИВАНИЕ</button>
+                    <button class="tab-btn"><i class="fas fa-skull"></i> АНАРХИЯ</button>
+                    <button class="tab-btn"><i class="fas fa-tools"></i> СТО</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="ReallyWorld Logo">
+                <div class="footer-info">
+                    <span>© 2025 SooFill.com - Все права защищены</span>
+                    <div class="footer-links">
+                        <a href="#">Пользовательское соглашение</a>
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="#">Контакты</a>
+                    </div>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#" title="ВКонтакте"><i class="fab fa-vk"></i></a>
+                <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+                <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Payment Modal -->
+    <div class="modal-overlay" id="paymentModal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>Оплата Сухариков</h3>
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="payment-details">
+                    <div class="amount-info">
+                        <span>Количество: <b id="currencyAmount">6000 рилликов</b></span>
+                        <span>Сумма к оплате: <b id="paymentAmount">500₽</b></span>
+                    </div>
+                    <form id="paymentForm">
+                        <div class="form-group">
+                            <label for="cardNumber">Номер карты</label>
+                            <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000" maxlength="19">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="expiryDate">Срок действия</label>
+                                <input type="text" id="expiryDate" placeholder="ММ/ГГ" maxlength="5">
+                            </div>
+                            <div class="form-group">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" placeholder="000" maxlength="3">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cardHolder">Имя держателя карты</label>
+                            <input type="text" id="cardHolder" placeholder="IVAN IVANOV">
+                        </div>
+                        <div class="form-group">
+                            <label for="promoCode">Промокод (если есть)</label>
+                            <input type="text" id="promoCode" placeholder="Введите промокод">
+                        </div>
+                        <button type="submit" class="payment-btn">ОПЛАТИТЬ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

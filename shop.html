@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин - SooFill.com</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="ReallyWorld Logo">
+                </a>
+                <span class="domain">SooFill.com</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="forum.html"><i class="fas fa-comments"></i> Форум</a></li>
+                    <li><a href="shop.html" class="active"><i class="fas fa-shopping-cart"></i> Магазин</a></li>
+                    <li><a href="donate.html"><i class="fas fa-gem"></i> Донат</a></li>
+                    <li><a href="rules.html"><i class="fas fa-book"></i> Правила</a></li>
+                </ul>
+            </nav>
+            <div class="user-panel">
+                <a href="#" class="login-btn"><i class="fas fa-sign-in-alt"></i> Войти</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="page-title">
+                <h1><i class="fas fa-shopping-cart"></i> Магазин SooFill.com</h1>
+                <p>Приобретайте различные товары для улучшения игрового процесса</p>
+            </div>
+        </section>
+
+        <section class="shop-categories">
+            <div class="shop-container">
+                <div class="category-tabs">
+                    <button class="category-tab active" data-category="all">Все товары</button>
+                    <button class="category-tab" data-category="vip">VIP-привилегии</button>
+                    <button class="category-tab" data-category="items">Предметы</button>
+                    <button class="category-tab" data-category="cosmetics">Косметика</button>
+                </div>
+
+                <div class="shop-grid">
+                    <!-- VIP-привилегии -->
+                    <div class="shop-item" data-category="vip">
+                        <div class="item-badge">Популярное</div>
+                        <div class="item-image">
+                            <img src="images/vip-icon.png" alt="VIP">
+                        </div>
+                        <div class="item-details">
+                            <h3>VIP-статус</h3>
+                            <div class="item-description">
+                                <p>Доступ к эксклюзивным командам и возможностям.</p>
+                                <ul>
+                                    <li>Команда /fly для полета</li>
+                                    <li>3 дома вместо 1</li>
+                                    <li>Цветной никнейм в чате</li>
+                                </ul>
+                            </div>
+                            <div class="item-price">
+                                <span>500 <i class="fas fa-coins"></i></span>
+                            </div>
+                            <button class="buy-item-btn">Приобрести</button>
+                        </div>
+                    </div>
+
+                    <div class="shop-item" data-category="vip">
+                        <div class="item-badge">Лучшая цена</div>
+                        <div class="item-image">
+                            <img src="images/premium-icon.png" alt="Premium">
+                        </div>
+                        <div class="item-details">
+                            <h3>Premium-статус</h3>
+                            <div class="item-description">
+                                <p>Расширенный набор возможностей для комфортной игры.</p>
+                                <ul>
+                                    <li>Все возможности VIP</li>
+                                    <li>Команда /heal для восстановления здоровья</li>
+                                    <li>5 домов вместо 3</li>
+                                    <li>Особый префикс в чате</li>
+                                </ul>
+                            </div>
+                            <div class="item-price">
+                                <span>1000 <i class="fas fa-coins"></i></span>
+                            </div>
+                            <button class="buy-item-btn">Приобрести</button>
+                        </div>
+                    </div>
+
+                    <!-- Предметы -->
+                    <div class="shop-item" data-category="items">
+                        <div class="item-image">
+                            <img src="images/diamond-sword.png" alt="Алмазный меч">
+                        </div>
+                        <div class="item-details">
+                            <h3>Алмазный меч</h3>
+                            <div class="item-description">
+                                <p>Мощный алмазный меч с зачарованием Sharpness V.</p>
+                            </div>
+                            <div class="item-price">
+                                <span>200 <i class="fas fa-coins"></i></span>
+                            </div>
+                            <button class="buy-item-btn">Приобрести</button>
+                        </div>
+                    </div>
+
+                    <div class="shop-item" data-category="items">
+                        <div class="item-image">
+                            <img src="images/elytra.png" alt="Элитры">
+                        </div>
+                        <div class="item-details">
+                            <h3>Элитры</h3>
+                            <div class="item-description">
+                                <p>Крылья для полета в Minecraft. Позволяют планировать в воздухе.</p>
+                            </div>
+                            <div class="item-price">
+                                <span>500 <i class="fas fa-coins"></i></span>
+                            </div>
+                            <button class="buy-item-btn">Приобрести</button>
+                        </div>
+                    </div>
+
+                    <!-- Косметика -->
+                    <div class="shop-item" data-category="cosmetics">
+                        <div class="item-image">
+                            <img src="images/particle-effect.png" alt="Партиклы">
+                        </div>
+                        <div class="item-details">
+                            <h3>Эффект частиц "Пламя"</h3>
+                            <div class="item-description">
+                                <p>Красивый эффект огненных частиц вокруг вашего персонажа.</p>
+                            </div>
+                            <div class="item-price">
+                                <span>300 <i class="fas fa-coins"></i></span>
+                            </div>
+                            <button class="buy-item-btn">Приобрести</button>
+                        </div>
+                    </div>
+
+                    <div class="shop-item" data-category="cosmetics">
+                        <div class="item-image">
+                            <img src="images/pet.png" alt="Питомец">
+                        </div>
+                        <div class="item-details">
+                            <h3>Питомец "Дракончик"</h3>
+                            <div class="item-description">
+                                <p>Милый питомец, который будет следовать за вами повсюду.</p>
+                            </div>
+                            <div class="item-price">
+                                <span>450 <i class="fas fa-coins"></i></span>
+                            </div>
+                            <button class="buy-item-btn">Приобрести</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="shop-info">
+            <div class="shop-container">
+                <div class="info-box">
+                    <div class="info-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Как работает магазин?</h3>
+                        <p>1. Выберите нужный товар из каталога.</p>
+                        <p>2. Нажмите кнопку "Приобрести".</p>
+                        <p>3. Подтвердите покупку, если у вас достаточно рилликов.</p>
+                        <p>4. Товар будет мгновенно доставлен в игру!</p>
+                        <div class="info-link">
+                            <a href="#" class="buy-coins-link">Пополнить счет рилликов <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="ReallyWorld Logo">
+                <div class="footer-info">
+                    <span>© 2025 SooFill.com - Все права защищены</span>
+                    <div class="footer-links">
+                        <a href="#">Пользовательское соглашение</a>
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="#">Контакты</a>
+                    </div>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#" title="ВКонтакте"><i class="fab fa-vk"></i></a>
+                <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+                <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Скрипт для категорий магазина
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryTabs = document.querySelectorAll('.category-tab');
+            const shopItems = document.querySelectorAll('.shop-item');
+            
+            categoryTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    // Удаляем активный класс у всех табов
+                    categoryTabs.forEach(t => t.classList.remove('active'));
+                    // Добавляем активный класс текущему табу
+                    this.classList.add('active');
+                    
+                    const category = this.getAttribute('data-category');
+                    
+                    // Фильтруем товары
+                    shopItems.forEach(item => {
+                        if (category === 'all' || item.getAttribute('data-category') === category) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

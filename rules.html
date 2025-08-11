@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Правила - SooFill.com</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="ReallyWorld Logo">
+                </a>
+                <span class="domain">SooFill.com</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="forum.html"><i class="fas fa-comments"></i> Форум</a></li>
+                    <li><a href="shop.html"><i class="fas fa-shopping-cart"></i> Магазин</a></li>
+                    <li><a href="donate.html"><i class="fas fa-gem"></i> Донат</a></li>
+                    <li><a href="rules.html" class="active"><i class="fas fa-book"></i> Правила</a></li>
+                </ul>
+            </nav>
+            <div class="user-panel">
+                <a href="#" class="login-btn"><i class="fas fa-sign-in-alt"></i> Войти</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="page-title">
+                <h1><i class="fas fa-book"></i> Правила сервера</h1>
+                <p>Ознакомьтесь с основными правилами поведения на нашем сервере</p>
+            </div>
+        </section>
+
+        <section class="rules-section">
+            <div class="rules-container">
+                <div class="rules-navigation">
+                    <ul>
+                        <li><a href="#general-rules">Общие правила</a></li>
+                        <li><a href="#chat-rules">Правила чата</a></li>
+                        <li><a href="#building-rules">Правила строительства</a></li>
+                        <li><a href="#economy-rules">Правила экономики</a></li>
+                        <li><a href="#pvp-rules">Правила PvP</a></li>
+                    </ul>
+                </div>
+
+                <div class="rules-content">
+                    <div class="rule-category" id="general-rules">
+                        <div class="rule-header">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <h2>Общие правила</h2>
+                        </div>
+                        <div class="rule-list">
+                            <div class="rule-item">
+                                <div class="rule-number">1.1</div>
+                                <div class="rule-text">
+                                    <p>Уважайте других игроков. Оскорбления, угрозы и прочие негативные действия запрещены.</p>
+                                </div>
+                            </div>
+
+                            <div class="rule-item">
+                                <div class="rule-number">1.2</div>
+                                <div class="rule-text">
+                                    <p>Запрещено использование читов, хаков и любых других модификаций, дающих преимущество.</p>
+                                </div>
+                            </div>
+
+                            <div class="rule-item">
+                                <div class="rule-number">1.3</div>
+                                <div class="rule-text">
+                                    <p>Запрещено использование багов и эксплойтов. О любых найденных багах сообщайте администрации.</p>
+                                </div>
+                            </div>
+
+                            <div class="rule-item">
+                                <div class="rule-number">1.4</div>
+                                <div class="rule-text">
+                                    <p>Запрещено создавать лаг-машины и любые конструкции, вызывающие лаги на сервере.</p>
+                                </div>
+                            </div>
+
+                            <div class="rule-item">
+                                <div class="rule-number">1.5</div>
+                                <div class="rule-text">
+                                    <p>Слушайте администрацию. Любые попытки обойти наказание или игнорировать указания будут наказаны.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rule-category" id="chat-rules">
+                        <div class="rule-header">
+                            <i class="fas fa-comment"></i>
+                            <h2>Правила чата</h2>
+                        </div>
+                        <div class="rule-list">
+                            <div class="rule-item">
+                                <div class="rule-number">2.1</div>
+                                <div class="rule-text">
+                                    <p>Запрещено спамить в чате. Не отправляйте одно и то же сообщение несколько раз подряд.</p>
+                                </div>
+                            </div>
+
+                            <div class="rule-item">
+                                <div class="rule-number">2.2</div>
+                                <div class="rule-text">
+                                    <p>Запрещено оскорблять других игроков в чате.</p>
+                                </div>
+                            </div>
+
+                            <div class="rule-item">
+                                <div class="rule-number">2.3</div>
+                                <div class="rule-text">
+                                    <p>Запрещено писать сообщения КАПСОМ (заглавными буквами).</p>
+                                </div>
+                            </div>
+
+                            <div class="rule-item">
+                                <div class="rule-number">2.4</div>
+                                <div class="rule-text">
+                                    <p>Запрещена реклама других серверов и посторонних ресурсов.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rule-category" id="building-rules">
+                        <div class="rule-header">
+                            <i class="fas fa-hammer"></i>
+                            <h2>Правила строительства</h2>
+                        </div>
+                        <div class="rule-list">
+                            <div class="rule-item">
+                                <div class="rule-number">3.1</div>
+                                <div class="rule-text">
+                                    <p>Запрещено строить неприличные и оскорбительные постройки.</p>
+                                </div>
+                            </div>
+
+                            <div class="rule-item">
+                                <div class="rule-number">3.2</div>
+                                <div class="rule-text">
+                                    <p>Запрещено строить слишком близко к другим игрокам без их разрешения (минимальное расстояние - 50 блоков).</p>
+                                </div>
+                            </div>
+
+                            <div class="rule-item">
+                                <div class="rule-number">3.3</div>
+                                <div class="rule-text">
+                                    <p>Запрещено уничтожать или портить постройки других игроков без их разрешения.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rule-category" id="economy-rules">
+                        <div class="rule-header">
+                            <i class="fas fa-coins"></i>
+                            <h2>Правила экономики</h2>
+                        </div>
+                        <div class="rule-list">
+                            <div class="rule-item">
+                                <div class="rule-number">4.1</div>
+                                <div class="rule-text">
+                                    <p>Запрещено обманывать игроков при торговле и обмене.</p>
+                                </div>
+                            </div>
+
+                            <div class="rule-item">
+                                <div class="rule-number">4.2</div>
+                                <div class="rule-text">
+                                    <p>Запрещено продавать игровые предметы за реальные деньги (кроме официального магазина на сайте).</p>
+                                </div>
+                            </div>
+
+                            <div class="rule-item">
+                                <div class="rule-number">4.3</div>
+                                <div class="rule-text">
+                                    <p>Запрещено использовать дюпы (дублирование предметов) и другие способы нечестного получения ресурсов.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rule-category" id="pvp-rules">
+                        <div class="rule-header">
+                            <i class="fas fa-fist-raised"></i>
+                            <h2>Правила PvP</h2>
+                        </div>
+                        <div class="rule-list">
+                            <div class="rule-item">
+                                <div class="rule-number">5.1</div>
+                                <div class="rule-text">
+                                    <p>PvP разрешено только в специально отведенных зонах или по взаимному согласию.</p>
+                                </div>
+                            </div>
+
+                            <div class="rule-item">
+                                <div class="rule-number">5.2</div>
+                                <div class="rule-text">
+                                    <p>Запрещено убивать новичков (игроков, проведших на сервере менее 3 часов).</p>
+                                </div>
+                            </div>
+
+                            <div class="rule-item">
+                                <div class="rule-number">5.3</div>
+                                <div class="rule-text">
+                                    <p>Запрещено использовать PvP-читы и макросы для получения преимущества в бою.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rules-note">
+            <div class="rules-container">
+                <div class="note-box">
+                    <div class="note-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <div class="note-content">
+                        <h3>Примечание</h3>
+                        <p>Администрация оставляет за собой право изменять правила без предварительного уведомления.</p>
+                        <p>Незнание правил не освобождает от ответственности.</p>
+                        <p>В случае нарушения правил администрация имеет право выдать предупреждение, мут, временный или постоянный бан.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="ReallyWorld Logo">
+                <div class="footer-info">
+                    <span>© 2025 SooFill.com - Все права защищены</span>
+                    <div class="footer-links">
+                        <a href="#">Пользовательское соглашение</a>
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="#">Контакты</a>
+                    </div>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#" title="ВКонтакте"><i class="fab fa-vk"></i></a>
+                <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+                <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
